@@ -4,7 +4,11 @@ import numpy as np
 from PIL import Image
 
 # โหลดโมเดล EfficientNet
-model = tf.keras.models.load_model("efficientnet_pneumonia.keras")
+model = tf.keras.models.load_model(
+    "efficientnet_pneumonia.keras",
+    compile=False
+)
+
 
 st.title("Pneumonia X-ray Diagnosis App")
 st.write("Upload X-ray image to diagnose pneumonia")
