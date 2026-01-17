@@ -5,7 +5,7 @@ from PIL import Image
 
 # โหลดโมเดล EfficientNet
 model = tf.keras.models.load_model(
-    "efficientnet_pneumonia.keras",
+    "efficientnet_pneumonia_infer.keras",
     compile=False
 )
 
